@@ -92,14 +92,23 @@ const Chat = () => {
   const handleDoc = (e) => {
     const file = e.target.files[0];
     if (!file) return;
-
-    const acceptedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'text/plain', 'application/vnd.ms-powerpoint', 'application/vnd.openxmlformats-officedocument.presentationml.presentation'];
-
+  
+    const acceptedTypes = [
+      'application/pdf', 
+      'application/msword', 
+      'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 
+      'text/plain', 
+      'application/vnd.ms-powerpoint', 
+      'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+      'application/vnd.ms-excel',
+      'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+    ];
+  
     if (!acceptedTypes.includes(file.type)) {
-      alert('Please select a valid document file (PDF, DOC, DOCX, PPT, or TXT)');
+      alert('Please select a valid document file (PDF, DOC, DOCX, PPT, TXT, XLS, or XLSX)');
       return;
     }
-
+  
     setDocFile(file);
     setPreviewDoc(file.name);
   };
