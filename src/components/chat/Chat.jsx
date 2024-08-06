@@ -73,7 +73,7 @@ const Chat = () => {
     const acceptedTypes = ['image/jpeg', 'image/png', 'image/svg+xml', 'image/gif', 'image/webp'];
 
     if (!acceptedTypes.includes(file.type)) {
-      alert('Please select a valid image file (JPEG, PNG, SVG, GIF, or WebP)');
+      alert('Please select a valid image file (JPEG, PNG, SVG, GIF or WebP)');
       return;
     }
 
@@ -105,7 +105,7 @@ const Chat = () => {
     ];
   
     if (!acceptedTypes.includes(file.type)) {
-      alert('Please select a valid document file (PDF, DOC, DOCX, PPT, TXT, XLS, or XLSX)');
+      alert('Please select a valid document file (PDF, DOC, DOCX, PPT, TXT, XLS or XLSX)');
       return;
     }
   
