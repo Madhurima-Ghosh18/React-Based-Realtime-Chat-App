@@ -8,9 +8,9 @@ A real-time chat application built with React and Firebase, featuring user authe
   
 * User Authentication: Secure login and registration using Firebase Authentication.
   
-* Image Sharing: Send and receive images (JPEG, PNG, SVG).
+* Image Sharing: Send and receive images (JPEG, PNG, SVG, GIF).
   
-* Document Sharing: Send and receive various document types (PDF, PPT, DOCX, TXT).
+* Document Sharing: Send and receive various document types (PDF, PPT, DOCX, TXT, XLSX).
   
 * User Management: Add or block users, clear chat history.
   
